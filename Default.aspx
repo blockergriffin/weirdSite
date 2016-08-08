@@ -22,24 +22,13 @@
 </head>
 
 <body>
+    <h1>About</h1>
+    <p>About stuff goes here. Make this shit look good.</p>
     <form id="form1" enctype="multipart/form-data" onsubmit="javascript:SetRefresh();" runat="server">
     <div>
-        <h1>Photo Gallery</h1>
-            <%  DisplayRecords(); %>
-        <div class="spacer">
-          &nbsp;
-        </div>
-        <p>
-            Upload an image...<br />
-            <asp:fileupload ID="UploadFile" runat="server"></asp:fileupload><br />
-            <asp:Button ID="Upload" runat="server" Text="Upload" OnClick="Button1_Click" />&nbsp;
-            <asp:HiddenField ID="__REFRESHSTAMP" runat="server" />
-        </p>
-        <p>
-            <font color="red">
-            <asp:Label ID="Message" runat="server"></asp:Label></font>
-            <asp:HyperLink id ="hyperlink1" NavigateUrl ="WebLogin.aspx" Text ="Login" runat ="server" />
-        </p>
+        <asp:HyperLink id ="hyperlink1" NavigateUrl ="WebLogin.aspx" Text ="Login" runat ="server" />
+        <p></p>
+        <asp:HyperLink id ="hyperlink2" NavigateUrl ="ViewPhotos.aspx" Text="Photos" runat ="server" />
     </div>
     </form>
 </body>
