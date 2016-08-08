@@ -1,0 +1,2 @@
+Base Photo Gallery .NET Sample Application
+Copyright 2011-2014 Amazon.com, Inc. or its affiliates. All Rights Reserved. 
