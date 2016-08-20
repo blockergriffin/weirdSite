@@ -4,7 +4,8 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
-    <title>Photo Gallery</title>
+
+    <title>Weird</title>
     <script type="text/javascript" language="javascript">
         function SetRefresh()
         {
@@ -20,16 +21,35 @@
 	@import url( StyleSheet.css );
     </style>
 </head>
-
 <body>
-    <h1>About</h1>
-    <p>About stuff goes here. Make this shit look good.</p>
-    <form id="form1" enctype="multipart/form-data" onsubmit="javascript:SetRefresh();" runat="server">
-    <div>
-        <asp:HyperLink id ="hyperlink1" NavigateUrl ="WebLogin.aspx" Text ="Login" runat ="server" />
-        <p></p>
-        <asp:HyperLink id ="hyperlink2" NavigateUrl ="ViewPhotos.aspx" Text="Photos" runat ="server" />
+  <header>
+    <div class="nav">
+      <ul>
+        <li class="home"><a href="Default.aspx" class="active">home</a></li>
+        <li class="music"><a href="MusicPage.aspx">music</a></li>
+        <li class="podcast"><a href="PodcastPage">podcast</a></li>
+        <li class="video"><a href="VideoPage">video</a></li>
+        <li class="about"><a href="#">about</a></li>          
+        <li class="login"><a href="WebLogin.aspx">login</a></li>
+      </ul>
     </div>
-    </form>
+  </header>
+  <div class="sidebar">
+    <ul class="event-list">
+      <li class="sidebar-header">Upcoming Events</li>
+      <br>
+      <li class="event">Event
+         <img class="event-img" src="PhotoGallery/DepartingPoloField.jpg" />
+      </li>
+      <li class="event">'nother event
+          <img class="event-img" src="PhotoGallery/GrassLanding.jpg" />
+      </li>
+      <li class="event">and one more
+          <img class="event-img" src="PhotoGallery/OverEngland.jpg" />
+      </li>
+  </div>
+    <div class="main-content">
+       <p>weird weird weird</p>
+    </div>
 </body>
 </html>
