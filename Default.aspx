@@ -49,7 +49,7 @@
       </li>
   </div>
     <div class="main-content">
-       <p>weird weird weird farts</p>
+       <p>weird weird weird</p>
     </div>
 </body>
 </html>
